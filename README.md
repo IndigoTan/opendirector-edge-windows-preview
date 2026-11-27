@@ -1,25 +1,25 @@
-OpenDirector + Edge 本地 Pika · Windows 试用版
+# OpenDirector + Edge · Windows Pika Preview
 
-使用方法
-1. 将安装程序与 edge-runtime.zip 下载到同一个文件夹；不要解压 edge-runtime.zip。
-2. 双击安装程序。安装完成后打开 OpenDirector。
-3. 首次设置时阅读模型许可、选择模型存放磁盘，并确认 Windows 管理员授权。
-4. 等待原始模型下载及启动自检完成。模型约 146.82 GB，下载中断后可继续；请保持足够的磁盘空间和网络连接。
-5. 在视频生成节点中选择本地 Pika，输入画面描述并提交。生成完成后可以播放，并将视频下载为 MP4。
+[下载安装包 / Download the preview](https://github.com/IndigoTan/opendirector-edge-windows-preview/releases/tag/windows-pika-preview-20261127)
 
-无需安装 Python、输入终端命令或使用 Codex/Claude。首次设置需管理员授权；日常启动无需手动运行模型服务。
-此试用版提供 480p、约 5 秒的文字生成视频与音频。它仍处于试用阶段，实际验证范围见随附 VALIDATION 文件；不要将其他显卡上的结果当作 RTX 4070 的性能保证。
-关闭应用会请求停止其拥有的模型服务会话。Windows 应用卸载会保留机器级运行时、原始模型及用户项目；若需要清理或换版本，请联系提供此试用包的维护者。
-若失败，请保留错误提示并反馈给维护者。不要删除模型目录或重复提交状态不明的生成任务。
+Windows 本地 Pika 试用包：无需安装 Python、输入命令或配置 Codex/Claude。
 
-OpenDirector + Edge local Pika · Windows preview
+模型许可排除欧盟、英国、韩国和美国，详见随附模型许可。
 
-1. Download the installer and edge-runtime.zip into the same folder. Do not extract the ZIP.
-2. Run the installer, then open OpenDirector.
-3. Read the model license, select a model drive, and approve the Windows administrator prompt for initial setup.
-4. Wait for the original model download and startup checks. Models occupy about 146.82 GB; interrupted downloads can resume.
-5. Select local Pika in a video generation node, describe the scene, submit, then play and download the generated MP4.
+请下载下面的 **OpenDirector-v0.1.6-win-x64-unsigned.exe** 和 **edge-runtime.zip**，放在同一个文件夹，保留文件名，不要解压 ZIP。双击安装程序，打开 OpenDirector；首次启动会自动下载并校验约 119 MB 的视频工具。按首次设置向导选择模型目录并确认管理员授权。模型约 **146.82 GB**，首次下载需要时间和足够磁盘空间。完成后点击“直接使用本地 Pika 创作”。
 
-No Python installation, terminal commands or AI coding assistant is required. Initial setup needs administrator authorization. Normal use does not require manually starting a model server.
-The preview supports 480p text-to-video with audio, approximately five seconds. See VALIDATION for actual test coverage; results on other hardware do not qualify RTX 4070 compatibility or performance.
-Closing the app requests retirement of its model-service session. Desktop uninstall preserves the machine runtime, original model files and projects. Contact the preview maintainer for cleanup or replacement. Preserve errors for diagnosis and do not blindly resubmit an unknown generation.
+已在 Windows RTX 5090 / 64 GB 内存上完成真实 Pika 生成及中英文播放、MP4 导出；安装版另外验证首次进入、播放导出和正常关闭。客户的 RTX 4070 / 12 GB 显存 / 32 GB 内存尚未实机验证。安装包未签名。这是供试用和反馈的预发布版本。
+
+请先阅读 README.txt 与 VALIDATION.md。SHA256SUMS.txt 提供下载校验值。
+
+---
+
+Model licenses exclude the EU, UK, Republic of Korea and USA; see the accompanying licenses.
+
+Download the EXE and edge-runtime.zip below into the same folder; keep their names and do not extract the ZIP. Run the installer and follow initial setup. Model originals require about 146.82 GB and administrator approval for setup. First launch downloads and verifies approximately 119 MB of media tools from their official publisher. No Python, terminal or coding assistant is required.
+
+Real generation and bilingual playback/MP4 export were verified on Windows RTX 5090 / 64 GB RAM. Installed desktop onboarding, playback/export and normal window-close retirement were verified separately. RTX 4070 / 12 GB VRAM / 32 GB RAM is not qualified. This unsigned prerelease is intended for customer trials. See README.txt and VALIDATION.md for scope and limitations.
+
+Edge sidecar 内 PyAV、FFmpeg 库及依赖的对应源码、构建材料见 `third-party-source.zip`；通常使用无需下载该源码包。
+
+Corresponding source and build materials for PyAV, FFmpeg libraries and dependencies inside the Edge sidecar are provided in `third-party-source.zip`; ordinary use does not require this source archive.
